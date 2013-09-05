@@ -1,0 +1,161 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Bulgarian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_MKI)
+#ifdef _WIN32
+LANGUAGE LANG_BULGARIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 280, 145
+STYLE DS_SETFONT | DS_CENTER | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "FileHide"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",TAB_MAIN,"SysTabControl32",0x0,0,0,275,140
+END
+
+IID_TAB1 DIALOGEX 0, 0, 270, 125
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | DS_CENTER | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+	PUSHBUTTON      "...",IDC_DRIVER_NAME_SELECT,241,26,11,14
+    PUSHBUTTON      "Инсталирай",IDC_BUT_INST,14,99,50,14
+    EDITTEXT        IDC_DRIVER_PATHNAME,71,27,164,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_TYPE,72,51,111,70,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Изтрий",IDC_BUT_UNINST,76,99,50,14
+    PUSHBUTTON      "Старт",IDC_BUT_RUN,138,99,50,14
+    PUSHBUTTON      "Стоп",IDC_BUT_STOP,200,99,50,14
+    LTEXT           "Пътечка на драйвера",IDC_STATIC,16,29,36,8
+    LTEXT           "Стартиращ вид",IDC_STATIC,15,52,54,8
+    LTEXT           "Положение",IDC_STATIC,15,77,46,8
+    CTEXT           "",IDC_STATIC_STATUS,72,75,88,12,SS_CENTERIMAGE | WS_BORDER
+    GROUPBOX        "Драйвер инсталация",IDC_STATIC,7,7,254,114
+END
+
+IID_TAB2 DIALOGEX 0, 0, 270, 125
+STYLE DS_SETFONT | DS_CONTROL | DS_CENTER | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LISTVIEW,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,4,4,189,115
+    PUSHBUTTON      "Скрий",IDC_BUT_HIDE,200,49,54,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 276
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 141
+    END
+
+    IID_TAB1, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 266
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 121
+    END
+
+    IID_TAB2, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 266
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 121
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+IDR_MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Добави",                      ID_ADD
+        MENUITEM "Изтрий",                      ID_REMOVE
+        MENUITEM "Изтрий всичко",               ID_REMOVEALL
+    END
+END
+
+#endif    // Bulgarian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
